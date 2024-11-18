@@ -3,7 +3,7 @@
 This repository contains the public FTC SDK for the INTO THE DEEP (2024-2025) competition season.
 
 ## Welcome!
-This GitHub repository contains the source code that is used to build an Android app to control a *FIRST* Tech Challenge competition robot.  To use this SDK, download/clone the entire project to your local computer.
+This GitHub repository contains the source code that is used to org.firstinspires.ftc.teamcode.build an Android app to control a *FIRST* Tech Challenge competition robot.  To use this SDK, download/clone the entire project to your local computer.
 
 ## Requirements
 To use this Android Studio project, you will need Android Studio Ladybug (2024.2) or later.
@@ -184,7 +184,7 @@ The readme.md file located in the [/TeamCode/src/main/java/org/firstinspires/ftc
 * Added Blocks OpMode sample SensorTouch.
 * Added Java OpMode sample SensorDigitalTouch.
 * Several improvements to VisionPortal
-  * Adds option to control whether the stream is automatically started following a `.build()` call on a VisionPortal Builder
+  * Adds option to control whether the stream is automatically started following a `.org.firstinspires.ftc.teamcode.build()` call on a VisionPortal Builder
   * Adds option to control whether the vision processing statistics overlay is rendered or not
   * VisionPortals now implement the `CameraStreamSource` interface, allowing multiportal users to select which portal is routed to the DS in INIT by calling CameraStreamServer.getInstance().setSource(visionPortal). Can be selected via gamepad, between Camera Stream sessions.
   * Add option to `AprilTagProcessor` to suppress calibration warnings
@@ -303,7 +303,7 @@ The readme.md file located in the [/TeamCode/src/main/java/org/firstinspires/ftc
 * Adds support for MJPEG payload streaming to UVC driver (external JPEG decompression routine required for use).
 * Shows a hint on the Driver Station UI about how to bind a gamepad when buttons are pressed or the sticks are moved on an unbound gamepad.
 * Adds option for fullscreening "Camera Stream" on Driver Station.
-* OnBotJava source code is automatically saved as a ZIP file on every build with a rolling window of the last 30 builds kept; allows recovering source code from previous builds if code is accidentally deleted or corrupted.
+* OnBotJava source code is automatically saved as a ZIP file on every org.firstinspires.ftc.teamcode.build with a rolling window of the last 30 builds kept; allows recovering source code from previous builds if code is accidentally deleted or corrupted.
 * Adds support for changing the addresses of Expansion Hubs that are not connected directly via USB.
   * The Expansion Hub Address Change screen now has an Apply button that changes the addresses without leaving the screen.
   * Addresses that are assigned to other hubs connected to the same USB connection or Control Hub are no longer able to be selected.
@@ -319,7 +319,7 @@ The readme.md file located in the [/TeamCode/src/main/java/org/firstinspires/ftc
 * Fixes a deadlock in the UVC driver which manifested in https://github.com/OpenFTC/EasyOpenCV/issues/57.
 * Fixes a deadlock in the UVC driver that could occur when hot-plugging cameras.
 * Fixes UVC driver compatibility with Arducam OV9281 global shutter camera.
-* Fixes Emergency Stop condition when an OnBotJava build with duplicate OpMode names occurs.
+* Fixes Emergency Stop condition when an OnBotJava org.firstinspires.ftc.teamcode.build with duplicate OpMode names occurs.
 * Fixes known causes of "Attempted use of a closed LynxModule instance" logspam.
 * Fixes the visual identification LED pattern when configuring Expansion Hubs connected via RS-485.
 
@@ -441,7 +441,7 @@ This is a bug fix only release to address the following four issues.
   * To opt in, open the OnBotJava Settings, and check `Enable beta Java 8 support`.
   * Note that Java 8 code will only compile when the Robot Controller runs Android 7.0 Nougat or later.
   * Please report issues [here](https://github.com/FIRST-Tech-Challenge/FtcRobotController/issues).
-* In OnBotJava, clicking on build errors now correctly jumps to the correct location.
+* In OnBotJava, clicking on org.firstinspires.ftc.teamcode.build errors now correctly jumps to the correct location.
 * Improves OnBotJava autocomplete behavior, to provide better completion options in most cases.
 * Adds a QR code to the Robot Controller Inspection Report when viewed from the Driver Station for scanning by inspectors at competition.
 * Improves I2C performance and reliability in some scenarios.
@@ -449,7 +449,7 @@ This is a bug fix only release to address the following four issues.
 ## Version 7.2 (20220723-130006)
 
 ### Breaking Changes
-* Updates the build tooling.  For Android Studio users, this change requires Android Studio Chipmunk 2021.2.1.
+* Updates the org.firstinspires.ftc.teamcode.build tooling.  For Android Studio users, this change requires Android Studio Chipmunk 2021.2.1.
 * Removes support for devices that are not competition legal, including Modern Robotics Core Control Modules, the Matrix Controller, and HiTechnic/NXT controllers and sensors.  Support remains for Modern Robotics I2C sensors.
 
 ### Enhancements
@@ -579,7 +579,7 @@ This is a bug fix only release to address the following four issues.
  * Fixes [FtcRobotController issue #114](https://github.com/FIRST-Tech-Challenge/FtcRobotController/issues/114)
    LED blocks and Java class do not work.
  * Fixes match logging for OpModes that contain special characters in their names.
- * Fixes Driver Station OpMode controls becoming unresponsive if the Driver Station was set to the landscape layout and an OnBotJava build was triggered while an OpMode was running.
+ * Fixes Driver Station OpMode controls becoming unresponsive if the Driver Station was set to the landscape layout and an OnBotJava org.firstinspires.ftc.teamcode.build was triggered while an OpMode was running.
  * Fixes the Driver Station app closing itself when it is switched away from, or the screen is turned off.
  * Fixes "black swirl of doom" (Infinite "configuring Wi-Fi Direct" message) on older devices.
  * Updates the wiki comment on the OnBotJava intro page.
@@ -637,7 +637,7 @@ This is a bug fix only release to address the following four issues.
 ### Important Notes
 * Version 6.0 is the version for the Ultimate Goal season.
 * Requires Android Studio 4.0.
-* Android Studio users need to be connected to the Internet the first time they build the app (in order to download needed packages for the build).
+* Android Studio users need to be connected to the Internet the first time they org.firstinspires.ftc.teamcode.build the app (in order to download needed packages for the org.firstinspires.ftc.teamcode.build).
 * Version 5.5 was a moderately large off-season, August 2020, drop.  It's worth reviewing those release notes below also.
 * Version 5.5 and greater will not work on older Android 4.x and 5.x phones.  Users must upgrade to an approved Android 6.x device or newer.
 * The default PIDF values for REV motors have been reverted to the default PID values that were used in the 2018-2019 season
@@ -781,11 +781,11 @@ Version 5.5 requires Android Studio 4.0 or later.
 * Improve I2C read performance
     * Very large improvement on Control Hub; up to ~2x faster with small (e.g. 6 byte) reads
     * Not as apparent on Expansion Hubs connected to a phone
-* Update/refresh build infrastructure
+* Update/refresh org.firstinspires.ftc.teamcode.build infrastructure
     * Update to 'androidx' support library from 'com.android.support:appcompat', which is end-of-life
     * Update targetSdkVersion and compileSdkVersion to 28
     * Update Android Studio's Android plugin to latest
-    * Fix reported build timestamp in 'About' screen
+    * Fix reported org.firstinspires.ftc.teamcode.build timestamp in 'About' screen
 * Add sample illustrating manual webcam use: ConceptWebcam
 
 
@@ -817,7 +817,7 @@ Version 5.5 requires Android Studio 4.0 or later.
 * Fixes issue where device scans would fail while the Robot was restarting
 * Fix RenderScript usage
     * Use androidx.renderscript variant: increased compatibility
-    * Use RenderScript in Java mode, not native: simplifies build
+    * Use RenderScript in Java mode, not native: simplifies org.firstinspires.ftc.teamcode.build
 * Fixes webcam-frame-to-bitmap conversion problem: alpha channel wasn't being initialized, only R, G, & B
 * Fixes possible arithmetic overflow in Deadline
 * Fixes deadlock in Vuforia webcam support which could cause 5-second delays when stopping OpMode
@@ -929,7 +929,7 @@ Known issues:
     * The orientation of the stream frames may not always match the phone preview. For now, these frames may be rotated manually via a custom `CameraStreamSource` if desired.
 * OnBotJava
     * Browser back button may not always work correctly
-    * It's possible for a build to be queued, but not started. The OnBot Java build console will display a warning if this occurs.
+    * It's possible for a org.firstinspires.ftc.teamcode.build to be queued, but not started. The OnBot Java org.firstinspires.ftc.teamcode.build console will display a warning if this occurs.
     * A user might not realize they are editing a different file if the user inadvertently switches from one file to another since this switch is now seamless. The name of the currently open file is displayed in the browser tab.
 
 ## Version 5.0 (built on 19.06.14)
@@ -938,8 +938,8 @@ Known issues:
  * Adds a new offline export feature to the Blocks editor.
  * Display Wi-Fi channel in Network circle on Driver Station.
  * Adds calibration for Logitech C270
- * Updates build tooling and target SDK.
- * Compliance with Google's permissions infrastructure (Required after build tooling update).
+ * Updates org.firstinspires.ftc.teamcode.build tooling and target SDK.
+ * Compliance with Google's permissions infrastructure (Required after org.firstinspires.ftc.teamcode.build tooling update).
  * Keep Alives to mitigate the Motorola Wi-Fi scanning problem.  Telemetry substitute no longer necessary.
  * Improves Vuforia error reporting.
  * Fixes ftctechnh/ftc_app issues 621, 713.
@@ -956,9 +956,9 @@ Known issues:
      - Bug in versions 4.0 and 4.1 would incorrect list the address module for a parent REV Robotics device as "1".
      - If the parent module had a higher address value than the daisy-chained module, then this bug would prevent the Robot Controller from communicating with the downstream Expansion Hub.
  * Added requirement for ACCESS_COARSE_LOCATION to allow a Driver Station running Android Oreo to scan for Wi-Fi Direct devices.
- * Added google() repo to build.gradle because aapt2 must be downloaded from the google() repository beginning with version 3.2 of the Android Gradle Plugin.
-     - Important Note: Android Studio users will need to be connected to the Internet the first time build the ftc_app project.
-     - Internet connectivity is required for the first build so the appropriate files can be downloaded from the Google repository.
+ * Added google() repo to org.firstinspires.ftc.teamcode.build.gradle because aapt2 must be downloaded from the google() repository beginning with version 3.2 of the Android Gradle Plugin.
+     - Important Note: Android Studio users will need to be connected to the Internet the first time org.firstinspires.ftc.teamcode.build the ftc_app project.
+     - Internet connectivity is required for the first org.firstinspires.ftc.teamcode.build so the appropriate files can be downloaded from the Google repository.
      - Users should not need to be connected to the Internet for subsequent builds.
      - This should also fix buid issue where Android Studio would complain that it "Could not find com.android.tools.lint:lint-gradle:26.1.4" (or similar).
  * Added support for REV Spark Mini motor controller as part of the configuration menu for a servo/PWM port on the REV Expansion Hub.
@@ -1105,8 +1105,8 @@ Changes with version 3.5 include:
  * Fixes issue where log files would be closed on pause of the RC or DS, but not re-opened upon resume.
  * Fixes issue with battery handler (voltage) start/stop race.
  * Fixes issue where Android Studio generated OpModes would disappear from available list in certain situations.
- * Fixes problem where OnBot Java would not build on REV Robotics Control Hub.
- * Fixes problem where OnBot Java would not build if the date and time on the Robot Controller device was "rewound" (set to an earlier date/time).
+ * Fixes problem where OnBot Java would not org.firstinspires.ftc.teamcode.build on REV Robotics Control Hub.
+ * Fixes problem where OnBot Java would not org.firstinspires.ftc.teamcode.build if the date and time on the Robot Controller device was "rewound" (set to an earlier date/time).
  * Improved error message on OnBot Java that occurs when renaming a file fails.
  * Removed unneeded resources from android.jar binaries used by OnBot Java to reduce final size of Robot Controller app.
  * Added MR_ANALOG_TOUCH_SENSOR block to Blocks Programming Tool.
@@ -1149,11 +1149,11 @@ Known issues:
  * Android Studio
     - After updating to the new v3.3 Android Studio project folder, if you get error messages indicating "InvalidVirtualFileAccessException" then you might need to do a File->Invalidate Caches / Restart to clear the error.
  * OnBot Java
-    - Sometimes when you push the build button to build all OpModes, the RC returns an error message that the build failed.  If you press the build button a second time, the build typically suceeds.
+    - Sometimes when you push the org.firstinspires.ftc.teamcode.build button to org.firstinspires.ftc.teamcode.build all OpModes, the RC returns an error message that the org.firstinspires.ftc.teamcode.build failed.  If you press the org.firstinspires.ftc.teamcode.build button a second time, the org.firstinspires.ftc.teamcode.build typically suceeds.
 
 ## Version 3.2 (built on 17.08.02)
 
-This version of the software introduces the "OnBot Java" Development Tool.  Similar to the FTC Blocks Development Tool, the FTC OnBot Java Development Tool allows a user to create, edit and build OpModes dynamically using only a Javascript-enabled web browser.
+This version of the software introduces the "OnBot Java" Development Tool.  Similar to the FTC Blocks Development Tool, the FTC OnBot Java Development Tool allows a user to create, edit and org.firstinspires.ftc.teamcode.build OpModes dynamically using only a Javascript-enabled web browser.
 
 The OnBot Java Development Tool is an integrated development environment (IDE) that is served up by the Robot Controller.  OpModes are created and edited using a Javascript-enabled browser (Google Chromse is recommended).  OpModes are saved on the Robot Controller Android device directly.
 
@@ -1410,7 +1410,7 @@ Changes include:
  * This is the new release for the upcoming 2016-2017 FIRST Tech Challenge Season.
  * Channel change is enabled in the FTC Robot Controller app for Moto G 2nd and 3rd Gen phones.
  * Users can now use annotations to register/disable their OpModes.
- * Changes in the Android SDK, JDK and build tool requirements (minsdk=19, java 1.7, build tools 23.0.3).
+ * Changes in the Android SDK, JDK and org.firstinspires.ftc.teamcode.build tool requirements (minsdk=19, java 1.7, org.firstinspires.ftc.teamcode.build tools 23.0.3).
  * Standardized units in analog input.
  * Cleaned up code for existing analog sensor classes.
  * setChannelMode and getChannelMode were REMOVED from the DcMotorController class.  This is important - we no longer set the motor modes through the motor controller.
@@ -1466,7 +1466,7 @@ Changes include:
  * Driver Station UI modified to display lowest measured voltage below current voltage (12V battery).
  * Driver Station UI modified to have color background for current voltage (green=good, yellow=caution, red=danger, extremely low voltage).
  * javadoc improved (edits and additional classes).
- * Added app build time to About activity for driver station and robot controller apps.
+ * Added app org.firstinspires.ftc.teamcode.build time to About activity for driver station and robot controller apps.
  * Display local IP addresses on Driver Station About activity.
  * Added I2cDeviceSynchImpl.
  * Added I2cDeviceSync interface.
@@ -1569,7 +1569,7 @@ Changes include:
 ## Release 15.10.06.002
 
  * Added support for Legacy Matrix 9.6V motor/servo controller.
- * Cleaned up build.gradle file.
+ * Cleaned up org.firstinspires.ftc.teamcode.build.gradle file.
  * Minor UI and bug fixes for driver station and robot controller apps.
  * Throws error if Ultrasonic sensor (NXT) is not configured for legacy module port 4 or 5.
 

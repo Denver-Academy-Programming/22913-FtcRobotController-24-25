@@ -17,7 +17,7 @@
 bin/
 gen/
 out/
-#  Uncomment the following line in case you need and you don't have the release build type files in your app
+#  Uncomment the following line in case you need and you don't have the release org.firstinspires.ftc.teamcode.build type files in your app
 # release/
 
 # Gradle files
@@ -51,7 +51,7 @@ captures/
 #*.jks
 #*.keystore
 
-# External native build folder generated in Android Studio 2.2 and later
+# External native org.firstinspires.ftc.teamcode.build folder generated in Android Studio 2.2 and later
 .externalNativeBuild
 .cxx/
 
